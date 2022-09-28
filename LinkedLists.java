@@ -102,6 +102,27 @@ public class LinkedLists<T> {
 		} else
 			head = head.next;
 	}
+	
+	public void pop() {
+	    if (head == null) {
+	      System.out.println("list is empty!");
+	      return;
+	    } else head = head.next;
+	  }
+
+	  public void popLast() {
+	    if (head == null) {
+	      System.out.println("list is empty!");
+	      return;
+	    } else if (head.next == null) head = head.next;
+	    else {
+	      Node<T> temp = head;
+
+	      while (temp.next.next != null) temp = temp.next;
+	      System.out.println("deleted " + temp.next.data);
+	      temp.next = null;
+	    }
+	  }
 }
 
 class Node<T> {
