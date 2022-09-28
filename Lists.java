@@ -1,12 +1,13 @@
 package day14_LinkList;
 
 public class Lists {
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 
-	    LinkedLists<Integer> linkedL = new LinkedLists<>();
+		    LinkedLists<Integer> linkedL = new LinkedLists<>();
 
-	    linkedL.addLast(56);
-	    linkedL.addLast(30);
-	    linkedL.addLast(70);
-	  }
+		    linkedL.addFirst(70);
+		    linkedL.addFirst(30);
+		    linkedL.addFirst(56);
+		    linkedL.display();
+		  }
 }
